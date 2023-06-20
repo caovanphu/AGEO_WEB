@@ -1,0 +1,117 @@
+footer {
+    #footer {
+        background: #585858;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        h1.footer-title {
+            color: #ffff;
+            font-size: 30px;
+            text-transform: uppercase;
+            margin-top: 15px;
+            margin-bottom: 20px;
+        }
+        .logo-footer {
+            text-align: center;
+        }
+        .footer-block {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px 0;
+            border-top: 1px solid #fff;
+            border-bottom: 1px solid #fff;
+            margin-top: 5px;
+            .block-item {
+                img {
+                    margin-right: 10px;
+                }
+                span {
+                    color: #fff;
+                    font-size: 16px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        .footer-info {
+            text-align: center;
+            color: #fff;
+            margin-top: 20px;
+            .company-name {
+                font-size: 14px;
+                text-transform: uppercase;
+            }
+        }
+        .footer-menu {
+            border-top: 1px solid #fff;
+            padding-top: 20px;
+            margin-top: 20px;
+            ul {
+                li.nav-item {
+                    padding: 2px 15px;
+                    line-height: 12px;
+                    border-right: 3px solid #ccc;
+                    a {
+                        padding: 0 10px 0 10px;
+                        color: #fff;
+                    }
+                    &:last-child {
+                        border-right: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.offers {
+    h2 {
+        font-weight: 300;
+        text-transform: uppercase;
+        font-size: 27px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    form {
+        display: flex;
+        .form-group {
+            width: 100%;
+            height: 50px;
+            border: 1px solid #ccc;
+            input {
+                height: 48px;
+                border: none;
+            }
+        }
+        button {
+            height: 50px;
+            width: 20%;
+            border: none;
+            border-radius: unset;
+            margin-left: 10px;
+            background: transparent;
+            border: 1px solid #ccc;
+            color: #333;
+        }
+    }
+}
+
+.social {
+    text-align: center;
+    a {
+        margin-right: 15px;
+        img {
+            width: 37px;
+        }
+        &:first-child {
+            img {
+                width: 15px;
+            }
+        }
+        &:last-child {
+            img {
+                width: 30px;
+            }
+        }
+    }
+}

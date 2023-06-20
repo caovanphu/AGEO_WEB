@@ -1,0 +1,89 @@
+<div class="overlay-mobile"></div>
+<!-- header-->
+<div class="header-main">
+    <div class="main-nav">
+        <button class="navbar-toggler" type="button" data-toggle="collapse">
+            <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+        </button>
+        <a class="navbar-brand mobile" href="./index.html">
+            <img src="./assets/images/logo.png" alt="">
+        </a>
+        <nav class="navbar navbar-expand-lg navbar-light bg  mobile">
+            <a class="navbar-brand" routerLink="/">
+                <img src="./assets/images/logo.png" alt="">
+            </a>
+            <div class="collapse navbar-collapse flex-left mobile align-self-center" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <ng-container *ngFor="let node of menuBar.children">
+                        <tree-node [node]="node"></tree-node>
+                    </ng-container>
+                </ul>
+                <!--ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Giới thiệu</a>
+                        <span class="btn-dropmenu"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                        <ul class="sub-menu">
+                            <li><a href="/News/1" class="nav-link">Lịch sử</a></li>
+                            <li><a href="/News/1" class="nav-link">Hồ sơ năng lực</a></li>
+                            <li><a href="/News/3" class="nav-link">Lĩnh vực hoạt động</a></li>
+                            <li><a class="nav-link">Đơn vị thành viên <i class="fa fa-angle-down"
+                                        aria-hidden="true"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="/News/4"
+                                            class="nav-link">Viện&nbsp;NC&nbsp;và&nbsp;Phát&nbsp;triển&nbsp;AGEO</a>
+                                    </li>
+                                    <li><a href="/News/5" class="nav-link">Trung tâm thí nghiệm và kiểm định công trình
+                                            (LAS-XD-98)</a></li>
+                                    <li><a href="/News/6" class="nav-link">Văn phòng Chi nhánh Miền trung - Tây
+                                            nguyên</a></li>
+                                    <li><a href="/News/7" class="nav-link">Văn phòng Chi nhánh Miền nam</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/News/3" class="nav-link">Giải&nbsp;pháp&nbsp;công&nbsp;nghệ&nbsp;AGEO</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sản phẩm - Dịch vụ</a>
+                        <span class="btn-dropmenu"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                        <ul class="sub-menu">
+                            <li><a href="project-list.html" class="nav-link">Khảo sát địa kỹ thuật xây dựng</a></li>
+                            <li><a href="project-list.html" class="nav-link">Khảo sát địa hình và CSDL không gian</a>
+                            </li>
+                            <li><a href="project-list.html"
+                                    class="nav-link">Tư&nbsp;vấn&nbsp;thiết&nbsp;kế&nbsp;Địa&nbsp;kỹ&nbsp;thuật&nbsp;và&nbsp;Công&nbsp;trình</a>
+                            </li>
+                            <li><a href="project-list.html" class="nav-link">Tư vấn thiết kế Địa kỹ thuật và Công
+                                    trình</a></li>
+                            <li><a href="project-list.html" class="nav-link">Thí nghiệm và kiểm định chất lượng công
+                                    trình</a></li>
+                            <li><a href="project-list.html" class="nav-link">Quan trắc xây dựng và môi trường</a></li>
+                            <li><a href="project-list.html" class="nav-link">Chuyển giao và phát triển công nghệ mới về
+                                    kỹ thuật công trình</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Dự án tiêu biểu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Tin tức</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Liên hệ</a></li>
+                </ul-->
+            </div>
+
+
+            <div class="collapse navbar-collapse flex-right mobile" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <!--li class="nav-item">
+                        <a class="nav-link" href="#">Dự án</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Member</a>
+                    </li-->
+                    <li class="nav-item">
+                        <a class="nav-link" target="_blank" href="http://atg-monitoring.com:86/">Đăng nhập</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+    </div>
+    <!--end-main-menu-->
+</div>
+<div style="padding-top:35px">&nbsp;</div>

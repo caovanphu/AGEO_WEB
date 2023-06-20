@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    color:#EE3638;
+    
+}
+
+a:hover {
+    text-decoration: none;
+    cursor: pointer !important;
+    color:#444;
+    // color: #ba1c65 !important;
+}
+
+input {
+    outline: 0;
+}
+
+form .group {
+    display: flex;
+    position: relative;
+    .icon-search {
+        position: absolute;
+        right: 22px;
+        top: 8px;
+        cursor: pointer;
+    }
+    input.radius {
+        border-radius: 30px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        //max-width: 1300px;
+    }
+}
+
+.no-padding {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+p {
+    line-height: 1.6;
+    margin: 0.8em 0;
+}
+
+body {
+    font-family: 'Helvetica Neue';
+    font-size: 14px;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/helvetica-neue-light.woff2') format('woff2'), url('../fonts/helvetica-neue-light.woff') format('woff'), url('../fonts/helvetica-neue-light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/helvetica-neue-regular.woff2') format('woff2'), url('../fonts/helvetica-neue-regular.woff') format('woff'), url('../fonts/helvetica-neue-regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    font-size: 18px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-slide {
+    background-size: cover;
+    background-position: center;
+}
+
+.mySwiper {
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
+.mySwiper .swiper-slide {
+    width: 25%;
+    height: 100%;
+    //opacity: 0.4;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+    opacity: 1;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    content: "/" !important;
+}

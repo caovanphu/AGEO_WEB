@@ -1,0 +1,136 @@
+<div class="single-page">
+  <div class="wrap-breadcrumbs">
+      <div class="container">
+          <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="/">Home</a></li>
+                  <li class="breadcrumb-item"><a href="/">{{data.title}}</a></li>
+              </ol>
+          </nav>
+      </div>
+  </div>
+
+  <div class="project-info">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-9 pr-md-5">
+                  <!--h6 class="entry-category">Tin Dự án</h6-->
+                  <h1 class="post-title">{{data.title}}</h1>
+
+                  <div class="content-detail" [innerHtml]="data.bodyHtml">
+                  </div>
+
+              </div>
+              <div class="col-lg-3 pl-md-1">
+                  <div class="widget-sidebar">
+                      <h2 class="widget-title">Dự án liên quan</h2>
+
+                      <div class="related-projects">
+                          <a href="#">
+                              <div class="box">
+                                  <img src="./assets/images/anh-sidebar.jpg" alt="" class="w-100">
+                                  <h3>Dự án Nhà máy Điện gió Quốc Vinh</h3>
+                              </div>
+                          </a>
+                      </div>
+
+                      <div class="catalog-about-us">
+                          <ul>
+                              <li>
+                                  <a href="#">Lịch sử</a>
+                              </li>
+                              <li>
+                                  <a href="#">Lĩnh vực hoạt động</a>
+                              </li>
+                              <li>
+                                  <a href="#">Giải pháp công nghệ</a>
+                              </li>
+                              <li>
+                                  <a href="#">Sản phẩm & dịch vụ</a>
+                              </li>
+                          </ul>
+                      </div>
+
+                      <div class="theme-tab">
+                          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                              <li class="nav-item">
+                                  <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-1" role="tab" aria-controls="pills-1" aria-selected="true">Chủ đề 1</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-2" role="tab" aria-controls="pills-2" aria-selected="false">Chủ đề 2</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-3" role="tab" aria-controls="pills-3" aria-selected="false">Chủ đề 3</a>
+                              </li>
+                          </ul>
+                          <!--div class="tab-content" id="pills-tabContent">
+                              <div class="tab-pane fade show active" id="pills-1" role="tabpanel" aria-labelledby="pills-home-tab">
+                                  <div class="post-item">
+                                      <div class="box-image">
+                                          <a href="#"> <img src="./assets/images/anh-du-an-3.jpg" alt="" class="w-100"></a>
+                                      </div>
+                                      <div class="box-text">
+                                          <a href="#">
+                                              <span>Craig Bator - <span class="date">27 Dec 2020</span></span>
+                                              <h3 class="post-title">Gluten-Free Almond Cake with Berries</h3>
+                                          </a>
+                                      </div>
+                                  </div>
+                                  <div class="post-item">
+                                      <div class="box-image">
+                                          <a href="#"> <img src="./assets/images/anh-du-an-3.jpg" alt="" class="w-100"></a>
+                                      </div>
+                                      <div class="box-text">
+                                          <a href="#">
+                                              <span>Craig Bator - <span class="date">27 Dec 2020</span></span>
+                                              <h3 class="post-title">Gluten-Free Almond Cake with Berries</h3>
+                                          </a>
+                                      </div>
+                                  </div>
+                                  <div class="post-item">
+                                      <div class="box-image">
+                                          <a href="#"> <img src="./assets/images/anh-du-an-3.jpg" alt="" class="w-100"></a>
+                                      </div>
+                                      <div class="box-text">
+                                          <a href="#">
+                                              <span>Craig Bator - <span class="date">27 Dec 2020</span></span>
+                                              <h3 class="post-title">Gluten-Free Almond Cake with Berries</h3>
+                                          </a>
+                                      </div>
+                                  </div>
+                                  <div class="post-item">
+                                      <div class="box-image">
+                                          <a href="#"> <img src="./assets/images/anh-du-an-3.jpg" alt="" class="w-100"></a>
+                                      </div>
+                                      <div class="box-text">
+                                          <a href="#">
+                                              <span>Craig Bator - <span class="date">27 Dec 2020</span></span>
+                                              <h3 class="post-title">Gluten-Free Almond Cake with Berries</h3>
+                                          </a>
+                                      </div>
+                                  </div>
+                                  <div class="post-item">
+                                      <div class="box-image">
+                                          <a href="#"> <img src="./assets/images/anh-du-an-3.jpg" alt="" class="w-100"></a>
+                                      </div>
+                                      <div class="box-text">
+                                          <a href="#">
+                                              <span>Craig Bator - <span class="date">27 Dec 2020</span></span>
+                                              <h3 class="post-title">Gluten-Free Almond Cake with Berries</h3>
+                                          </a>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="tab-pane fade" id="pills-2" role="tabpanel" aria-labelledby="pills-profile-tab">2</div>
+                              <div class="tab-pane fade" id="pills-3" role="tabpanel" aria-labelledby="pills-contact-tab">3</div>
+                          </div-->
+                      </div>
+
+                  </div>
+
+              </div>
+          </div>
+      </div>
+
+  </div>
+</div>

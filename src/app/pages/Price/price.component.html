@@ -1,0 +1,59 @@
+<!-- banner-->
+<section class="banner py-3 mt-5" style='background-color: #f5f5f5;'>
+  <div class="container">
+    <div class='row'>
+      <div class="col-sm-7 col-xs-12 banner__content">
+        <span style='background-color: transparent'><b>Bảng giá </b>
+          <font style='font-weight: normal;'>các gói<br>sản phẩm của </font>
+          <font class='text-orange'>NABIT</font>
+        </span>
+      </div>
+      <div class='col-sm-5 col-xs-12'>
+        <img class="banner__img" src="./assets/images/banner-price.png" style="float:right" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Banner-->
+<section id="new" style='background-color: #f5f5f5;'>
+  <div class="wrapper not-index" style="padding: 10px;background-color: #f5f5f5;">
+    <div class='container text-center'>
+      <ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="pills-QLCH-tab" data-toggle="pill" href="#pills-QLCH" role="tab"
+            aria-controls="pills-QLCH" aria-selected="true">Hệ thống QLCH</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-KDXD-tab" data-toggle="pill" href="#pills-KDXD" role="tab"
+            aria-controls="pills-KDXD" aria-selected="false">Hệ thống KDXD</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-QLKho-tab" data-toggle="pill" href="#pills-QLKho" role="tab"
+            aria-controls="pills-QLKho" aria-selected="false">Hệ thống QL Kho</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-ERP-tab" data-toggle="pill" href="#pills-ERP" role="tab"
+            aria-controls="pills-ERP" aria-selected="false">Hệ thống ERP</a>
+        </li>
+      </ul>
+    </div>
+    <div class="container">
+      <div class="magin-full shadow-5" style="background-color: white">
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane show active" id="pills-QLCH" role="tabpanel" aria-labelledby="pills-QLCH-tab">
+            <app-PriceQLCH></app-PriceQLCH>
+          </div>
+          <div class="tab-pane" id="pills-KDXD" role="tabpanel" aria-labelledby="pills-KDXD-tab">
+            <app-PriceKDXD></app-PriceKDXD>
+          </div>
+          <div class="tab-pane" id="pills-QLKho" role="tabpanel" aria-labelledby="pills-QLKho-tab">
+            <app-PriceQLKho></app-PriceQLKho>
+          </div>
+          <div class="tab-pane" id="pills-ERP" role="tabpanel" aria-labelledby="pills-ERP-tab">
+            <app-PriceERP></app-PriceERP>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

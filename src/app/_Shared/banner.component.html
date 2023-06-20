@@ -1,0 +1,27 @@
+<section class="search">
+  <div class="search-wrapper">
+    <div leaflet class="map"
+         [leafletOptions]="options"
+         [leafletLayersControl]="layersControl"
+         [leafletZoom]="zoom"
+         [leafletCenter]="center"
+    >
+    </div>
+    <swiper [effect]="'cube'" [grabCursor]="true" [autoplay]="{
+            delay: 2500,
+            disableOnInteraction: false
+          }" [cubeEffect]="{
+            shadow: true,
+            slideShadows: true,
+            shadowOffset: 20,
+            shadowScale: 0.94
+          }" [pagination]="true" class="mySwiper">
+      <ng-template swiperSlide *ngFor="let item of listProject">
+        <div><img src="{{item.imageUrl}}" style="height:380px" /></div>
+      </ng-template>
+    </swiper>
+  </div>
+  <!--button type="button"
+          class="btn btn-primary"
+          (click)="doApply()">Apply</button-->
+</section>

@@ -1,0 +1,16 @@
+<ng-container *ngTemplateOutlet="tree;context:{node:node}"></ng-container>
+<ng-template #tree let-node="node">
+  <li class="nav-item" *ngIf="node.children && node.children.length; else noChild">
+    <a class="nav-link">{{node.label}}
+      <i class="fa fa-angle-down" aria-hidden="true"></i>
+    </a>
+    <ul class="sub-menu" *ngIf="node.children && node.children.length > 0">
+      <ng-container *ngFor="let child of node.children">
+        <ng-container *ngTemplateOutlet="tree;context:{node:child}"></ng-container>
+      </ng-container>
+    </ul>
+  </li>
+  <ng-template #noChild>
+    <li class="nav-item"><a class="nav-link" href="{{node.imgUrl}}">{{node.label}}</a></li>
+  </ng-template>
+</ng-template>

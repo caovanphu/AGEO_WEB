@@ -1,0 +1,60 @@
+<section class="contractor">
+    <div class="find-contractor">
+        <div class="container">
+            <h2>Tin tức - sự kiện</h2>
+            <div class="contractor-wrapper">
+                <div class="row">
+                    <!--div class="col-lg-6">
+                      <div class="contractor-content">
+                          <h2><a routerLink="/News/2">Triển khai dự án tại Flamingo Đại Lải</a></h2>
+                          <p></p>
+                      </div>
+                  </div>
+                  <div class="col-lg-6">
+                      <img src="./assets/images/News/Flamingo.jpg" alt="" class="w-100">
+                  </div-->
+                    <div class="row row-post">
+                        <div class="col-md-6">
+                            <div class="post-default">
+                                <a href="/news{{topNew.id}}" class="post-default__img">
+                                    <img alt="" class="img-thumbnail w-100" [src]="topNew.imageUrl" atl="" />
+                                </a>
+                                <div class="post-default__body">
+                                    <h3 class="post-default__title"><a href="/News/{{topNew.id}}">
+                                            {{topNew.title}}</a></h3>
+                                    <div class="post-default__meta mb-20"><span class="meta-cat">
+                                            <a href="#">AGEO MEDIA</a></span>&nbsp;|&nbsp;{{topNew.publishedDate}}}
+                                    </div>
+                                    <p class="post-default__text">{{topNew.subject}}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="post-detail-list wow fadeInUp  effect" data-wow-delay=".2s"
+                                style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;"
+                                *ngFor="let item of listNew">
+                                <div class="post-default">
+                                    <div class="post-default__body">
+                                        <div class="row">
+                                            <div class="col-9">
+                                                <h3 class="post-default__title">
+                                                    <a href="/News/{{item.id}}">{{item.title}}</a>
+                                                </h3>
+                                                <div class="post-default__meta"><span class="meta-cat">
+                                                    <a href="#">{{item.titleCategory}}</a></span>&nbsp;|&nbsp;21/07/2022</div>
+                                            </div>
+                                            <div class="col-3">
+                                                <img alt="" src="{{item.imageUrl}}" class="img-thumbnail w-100" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
