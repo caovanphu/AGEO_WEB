@@ -10,7 +10,7 @@ import { delay } from 'rxjs/operators';
 })
 export class CmsNewsService extends BaseService {
     constructor(http: HttpClient, injector: Injector) {
-        super(http, injector, `http://api.ageo.vn/cms/cmsnews`);
+        super(http, injector, `http://api.quantrac.vn/cms/cmsnews`);
     }
 
     find(model: any): Promise<ResponseResult|undefined> {

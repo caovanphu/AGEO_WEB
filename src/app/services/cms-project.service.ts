@@ -9,7 +9,7 @@ import { catchError } from 'rxjs/operators';
 })
 export class CmsProjectService extends BaseService {
     constructor(http: HttpClient, injector: Injector) {
-        super(http, injector, `http://api.ageo.vn/cms/CmsProject`);
+        super(http, injector, `http://api.quantrac.vn/cms/CmsProject`);
     }
 
     find(model: any): Promise<ResponseResult|undefined> {

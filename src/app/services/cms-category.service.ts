@@ -8,7 +8,7 @@ import { catchError } from 'rxjs/operators';
 })
 export class CategoriesService extends BaseService {
     constructor(http: HttpClient, injector: Injector) {
-        super(http, injector, `http://api.ageo.vn/cms/categories`);
+        super(http, injector, `http://api.quantrac.vn/cms/categories`);
     }
     getTreeByIdParent(idParent = 0, status: number = 1, includeParent: boolean = true,) {
         const queryString = `${this.serviceUri}/GetTreeByIdParent/${idParent}/${status}/${includeParent}`;
